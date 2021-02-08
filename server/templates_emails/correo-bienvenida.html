@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Mail</title>
+
+    <style>
+        .container{
+            display: grid;
+            justify-content: center;
+            
+            background-image: url("https://app.tabernaculodevida.es/server/templates_emails/footer.png"); /* The image used */
+            background-color: #ffffff; /* Used if the image is unavailable */
+            height: 286px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        header {
+            background-image: url(https://app.tabernaculodevida.es/server/templates_emails/header.png);
+            background-repeat: no-repeat;
+            width: 900px;
+            height: 160px;
+            border-bottom: 5px solid #70964e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+			<img src="" alt="">
+		</header>
+        <table bgcolor="#eeeeee" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td bgcolor="#FFFFFF" colspan="3" rowspan="3" style="padding:0">
+                                                {{TDV_MENSAJE}}                
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+        
+                                
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end main block --></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

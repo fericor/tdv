@@ -1,0 +1,36 @@
+.tdv_click{cursor: pointer;}
+.tdv_scroll{/*position:relative;width:35%;float:left;border-right: solid #ff920a 2px;min-height: 100px;height:100%;overflow:auto;*/}
+.card{cursor: pointer;}
+div.scroll { 
+    width: 100%; 
+    height: 500px; 
+    overflow-x: hidden; 
+    overflow-x: auto; 
+    text-align:justify; 
+} 
+.text-t1 {
+    color: #9c428d !important;
+}
+.text-t2 {
+    color: #547959 !important;
+}
+.text-t3 {
+    color: #802f66 !important;
+}
+.text-t4 {
+    color: #3ddf14 !important;
+}
+.text-t5 {
+    color: #1d887a !important;
+}
+@media print {
+    /* on modal open bootstrap adds class "modal-open" to body, so you can handle that case and hide body */
+    body.modal-open {
+        visibility: hidden;
+    }
+
+    body.modal-open .modal .modal-header,
+    body.modal-open .modal .modal-body {
+        visibility: visible; /* make visible modal body and header */
+    }
+}
